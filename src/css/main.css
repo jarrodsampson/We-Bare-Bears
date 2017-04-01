@@ -1,0 +1,299 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.mainBanner {
+    background: no-repeat bottom center fixed #000;
+    width: 100%;
+    height: 400px;
+    background-size: 62%;
+}
+
+p {
+        font-size: 14pt;
+        line-height: 2.5em;
+}
+
+
+.videoMain {
+            width:100%;
+            max-height:500px;
+            background-size: cover;
+            background: #000;
+            overflow:hidden;
+            z-index:-4;
+        }
+
+.videoMain2 {
+            width:100%;
+            max-height:550px;
+            background-size: cover;
+            overflow:hidden;
+            z-index:-4;
+        }
+
+#self1 {
+        margin-top: -3em;
+}
+
+.theGirlsBox img {
+
+    max-height:220px;
+    cursor:hand;
+    cursor:pointer;
+
+}
+
+.theGirlsBox img:hover {
+    -moz-animation: shake 2s infinite;
+                -webkit-animation: shake 2s infinite;
+                animation: shake 2s infinite;
+}
+
+.girlDetailBox img {
+
+    max-width:250px;
+
+}
+
+.spacer-small {
+
+    width:100%;
+    height:60px;
+
+
+}
+
+.scroll-top {
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        background: rgba(0,0,0,0.7);
+        border-radius: 10px;
+            width: 60px;
+            height: 60px;
+                padding: 0 0 0 11px;
+                display:none;
+    z-index: 9999;
+}
+
+.scroll-top i {
+    color:white;
+    font-size:44pt;
+}
+
+
+.fade.ng-hide {
+  opacity: 0;
+}
+
+.fade.ng-hide-remove,
+.fade.ng-hide-add {
+  display: block !important;
+}
+
+.fade.ng-hide-remove {
+  transition: all linear 1000ms;
+}
+
+.fade.ng-hide-add {
+  transition: all linear 500ms;
+}
+
+
+.parallax {
+    top: -25em;
+}
+
+.aboveGirl {
+            position: relative;
+            top: -597px;
+            max-width: 600px;
+            margin: auto;
+            color: white;
+}
+
+.aboveGirl .text {
+    background: rgba(0,0,0,0.4);
+        border-radius: 10px;
+        padding: 1em;
+        margin-top: 6em;
+}
+
+.loader {
+    min-height: 1500px;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.95);
+        z-index: 9999;
+        width: 100%;
+        position: fixed;
+        color:white;
+}
+
+.loader .content {
+    margin-top:15%;
+
+}
+
+.loader .content img {
+-moz-animation: spinnerRotate 1s infinite;
+            -webkit-animation: spinnerRotate 1s infinite;
+            animation: spinnerRotate 1s infinite;
+}
+
+ @-webkit-keyframes spinnerRotate
+        {
+            from{-webkit-transform:rotate(0deg);}
+            to{-webkit-transform:rotate(360deg);}
+        }
+        @-moz-keyframes spinnerRotate
+        {
+            from{-moz-transform:rotate(0deg);}
+            to{-moz-transform:rotate(360deg);}
+        }
+        @-ms-keyframes spinnerRotate
+        {
+            from{-ms-transform:rotate(0deg);}
+            to{-ms-transform:rotate(360deg);}
+        }
+
+/* headroom css */
+
+.slide {
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out
+}
+.slide--reset {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+}
+.slide--up {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+.brand-logo img {
+    width: 215px;
+    padding: 1px;
+}
+
+.community {
+    margin: 1em;
+    background: rgba(236, 240, 241,1.0);
+    min-width:250px;
+}
+
+.community img {
+    width: 100%;
+}
+
+.community .title {
+    font-size: 20pt;
+}
+
+.topnav li a {
+    text-transform: uppercase;
+}
+
+nav ul a.active {
+    background: rgba(0,0,0,0.2);
+}
+
+.titleIt {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    color: white;
+    height: 100px;
+    transition: .6s all;
+}
+
+.titleIt:hover {
+    background: rgba(0,0,0,0.5);
+    height: 200px;
+}
+
+.titleIt p {
+    padding-top: 0.5em;
+    transition: .6s all;
+}
+
+.titleIt p:hover {
+    font-size:20pt;
+}
+
+.communityBanner {
+    background: no-repeat bottom center fixed;
+    background-size: 100%;
+    margin-top:-2em;
+}
+
+.theGirlsBox {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    transition: .6s all;
+}
+
+.theGirlsBox:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+.modal {
+    width: 85%;
+}
+
+@media(max-width: 1300px) {
+    .mainBanner {
+        background: no-repeat bottom center fixed #000;
+        width: 100%;
+        height: 400px;
+        background-size: 72%;
+    }
+}
+
+
+@media(max-width: 992px) {
+    .mainBanner {
+        background: no-repeat bottom center fixed #000;
+        width: 100%;
+        height: 400px;
+        background-size: 92%;
+    }
+
+    .aboveGirl {
+        top: -497px;
+    }
+}
+
+@media(max-width: 720px) {
+    .mainBanner {
+        background: no-repeat bottom center fixed #000;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+}
+
+.thing-enter {
+    opacity: 0.01;
+    transition: opacity 1s ease-in;
+}
+
+.thing-enter.thing-enter-active {
+    opacity: 1;
+}
+
+.thing-leave {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.thing-leave.thing-leave-active {
+    opacity: 0.01;
+}
