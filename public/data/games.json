@@ -1,20 +1,20 @@
 [
   {
-    "title": "Glitch Fixers",
-    "description": "Description",
-    "link": "http://www.cartoonnetwork.com/games/powerpuff-girls/glitch-fixers/index.html",
-    "image": "glitch.gif"
+    "title": "Feathered Chase",
+    "description": "Stop that bird! My dinner is in there and there's no way your taking it!",
+    "link": "http://www.cartoonnetwork.com/games/we-bare-bears/feathered-chase/index.html",
+    "image": "feathered.gif"
   },
   {
-    "title": "Robot Madness",
-    "description": "Description",
-    "link": "http://www.cartoonnetwork.com/games/powerpuff-girls/robot-madness/index.html",
-    "image": "robot-madness.gif"
+    "title": "Bearsketball",
+    "description": "Shoot some hoops and show them who's boss on theis court!",
+    "link": "http://www.cartoonnetwork.com/games/we-bare-bears/bearsketball/index.html",
+    "image": "ball.gif"
   },
   {
-    "title": "Attack of The Puppy Bots",
-    "description": "Description",
-    "link": "http://www.cartoonnetwork.com/games/ppg/attackofthepuppybots/index.html",
-    "image": "puppies.gif"
+    "title": "Free Fur All",
+    "description": "Help the bears enjoy their Saturday filled with random adventures!",
+    "link": "http://www.cartoonnetwork.com/games/we-bare-bears/free-fur-all/index.html",
+    "image": "fur.gif"
   }
 ]

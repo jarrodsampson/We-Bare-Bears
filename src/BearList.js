@@ -17,7 +17,7 @@ class BearList extends Component {
                     name={bear.name}
                     image={bear.image}
                     description={bear.description}
-                    video={bear.video}
+                    mainBg={bear.big}
                     key={bear.name}
                     onClick={this.showBearDetail.bind(this, bear)}
                 />

@@ -1,34 +1,26 @@
 [
   {
-    "image": "bell.png",
-    "description": "Bell Drawing"
+    "image": "photo1.jpg",
+    "description": "Makin' It Rain"
   },
   {
-    "image": "reboot.png",
-    "description": "From the Reboot Series"
+    "image": "photo2.jpg",
+    "description": "Music Video"
   },
   {
-    "image": "bloss.png",
-    "description": "Dark Blossom"
+    "image": "photo3.jpg",
+    "description": "Basketball Practice"
   },
   {
-    "image": "ilona.png",
-    "description": "Ilona!!!"
+    "image": "photo4.jpg",
+    "description": "Bearstack!"
   },
   {
-    "image": "rowdy.jpg",
-    "description": "Rowdy Ruff Boys"
+    "image": "photo5.jpg",
+    "description": "Sunday Shopping"
   },
   {
-    "image": "tdi.png",
-    "description": ""
-  },
-  {
-    "image": "tumblr.png",
-    "description": ""
-  },
-  {
-    "image": "z.png",
-    "description": ""
+    "image": "photo6.jpg",
+    "description": "Can't Touch This!"
   }
 ]

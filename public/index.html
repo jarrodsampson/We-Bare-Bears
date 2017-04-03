@@ -11,6 +11,77 @@
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <style>
+      #root {min-height:700px;}
+
+      .loader {
+          min-height: 1500px;
+              top: 0;
+              left: 0;
+              background: rgba(0,0,0,0.95);
+              z-index: 9999;
+              width: 100%;
+              position: fixed;
+              color:white;
+      }
+      .loader .content {
+    margin-top:5%;
+}
+      .loader .content img {
+     max-width:150px;
+-moz-animation: bounce 1s infinite;
+            -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+}
+@-moz-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                -moz-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -moz-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+            60% {
+                -moz-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+        }
+        @-webkit-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+            60% {
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                -moz-transform: translateY(0);
+                -ms-transform: translateY(0);
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -moz-transform: translateY(-30px);
+                -ms-transform: translateY(-30px);
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+            60% {
+                -moz-transform: translateY(-15px);
+                -ms-transform: translateY(-15px);
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+        }
+    </style>
   </head>
   <body id="top">
 
@@ -26,9 +97,10 @@
             <li><a href="#About">About</a></li>
             <li><a href="#community">Community</a></li>
             <li><a href="#games">Games</a></li>
-            <li><a href="//www.cartoonnetwork.com/video/thepowerpuffgirls/index.html" target="_blank" class="waves-effect waves-light btn orange darken-1">Watch</a></li>
+            <li><a href="//www.cartoonnetwork.com/video/we-bare-bears/" target="_blank" class="waves-effect waves-light btn orange darken-1">Watch</a></li>
           </ul>
-          <ul class="side-nav" id="mobile-demo">
+          <ul class="sideNav topnav side-nav" id="mobile-demo">
+            <img src="images/art2.jpg" alt="SideImagine" />
             <li><a href="#bears">Bears</a></li>
             <li><a href="#photos">Photos</a></li>
             <li><a href="#About">About</a></li>
@@ -40,7 +112,16 @@
     </div>
   </header>
 
+  <div class="loader center-align">
+    <div class="content">
+      <img src="images/panda.png" width="200" alt="Loader" />
+      <h2>Loading Bears...</h2>
+    </div>
+  </div>
+
     <div id="root"></div>
+
+
 
     <footer class="page-footer black">
       <div class="container">
@@ -68,6 +149,10 @@
       <a href="#top" class="scroll-top tooltipped" data-position="left" data-tooltip="Back to Top">
         <i class="fa fa-angle-up"></i>
       </a>
+
+      <audio autoplay id="audio">
+        <source src="media/intro.mp3" type="audio/mpeg">
+      </audio>
 
     </footer>
 

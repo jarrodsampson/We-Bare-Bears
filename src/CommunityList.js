@@ -18,8 +18,10 @@ class CommunityList extends Component {
             );
         }, this);
         return (
-            <div className="CommunityList">
-                {communityList}
+            <div className="CommunityList col s12">
+                <div className="expander">
+                    {communityList}
+                </div>
             </div>
         );
     }

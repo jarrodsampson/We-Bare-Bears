@@ -9,7 +9,7 @@ class Game extends Component {
                 <p>{this.props.title}</p>
                 <p>
                     <a href={this.props.link} target="_blank">
-                        <img src={"images/" + this.props.image} alt={this.props.title} />
+                        <img className="gamesImg" src={"images/games/" + this.props.image} alt={this.props.title} />
                     </a>
                 </p>
                 <p>{this.props.description}</p>

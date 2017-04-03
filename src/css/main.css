@@ -1,5 +1,29 @@
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
+
+.side-nav {
+    min-height: 1000px;
+}
+
+nav .button-collapse {
+    padding-left: 1em;
+}
+
+.side-nav img {
+        max-width: 100%;
+            margin-bottom: -1.9em;
+}
+
+.active {
+    background: rgba(0,0,0,0.2);
+}
+
+nav .sideNav a.active {
+    background: rgba(67,160,71, 0.9);
+    color:white;
+}
+
+nav .sideNav li a:hover {
+    background: rgba(67,160,71, 0.2);
+    color:orange;
 }
 
 .mainBanner {
@@ -8,155 +32,102 @@
     height: 400px;
     background-size: 62%;
 }
-
 p {
-        font-size: 14pt;
-        line-height: 2.5em;
+    font-size: 14pt;
+    line-height: 2.5em;
 }
-
-
 .videoMain {
-            width:100%;
-            max-height:500px;
-            background-size: cover;
-            background: #000;
-            overflow:hidden;
-            z-index:-4;
-        }
-
+    width: 100%;
+    max-height: 500px;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -4;
+}
 .videoMain2 {
-            width:100%;
-            max-height:550px;
-            background-size: cover;
-            overflow:hidden;
-            z-index:-4;
-        }
-
+    width: 100%;
+    max-height: 550px;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -4;
+}
 #self1 {
-        margin-top: -3em;
-}
-
-.theGirlsBox img {
-
-    max-height:220px;
-    cursor:hand;
-    cursor:pointer;
-
-}
-
-.theGirlsBox img:hover {
-    -moz-animation: shake 2s infinite;
-                -webkit-animation: shake 2s infinite;
-                animation: shake 2s infinite;
-}
-
-.girlDetailBox img {
-
-    max-width:250px;
-
-}
-
-.spacer-small {
-
-    width:100%;
-    height:60px;
-
-
-}
-
-.scroll-top {
-        position: fixed;
-        bottom: 1em;
-        right: 1em;
-        background: rgba(0,0,0,0.7);
-        border-radius: 10px;
-            width: 60px;
-            height: 60px;
-                padding: 0 0 0 11px;
-                display:none;
-    z-index: 9999;
-}
-
-.scroll-top i {
-    color:white;
-    font-size:44pt;
+    margin-top: -3em;
 }
 
 
-.fade.ng-hide {
-  opacity: 0;
+.bearBoxer {
+    transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.fade.ng-hide-remove,
-.fade.ng-hide-add {
-  display: block !important;
-}
-
-.fade.ng-hide-remove {
-  transition: all linear 1000ms;
-}
-
-.fade.ng-hide-add {
-  transition: all linear 500ms;
-}
-
-
-.parallax {
-    top: -25em;
-}
-
-.aboveGirl {
-            position: relative;
-            top: -597px;
-            max-width: 600px;
-            margin: auto;
-            color: white;
-}
-
-.aboveGirl .text {
-    background: rgba(0,0,0,0.4);
-        border-radius: 10px;
-        padding: 1em;
-        margin-top: 6em;
-}
-
-.loader {
-    min-height: 1500px;
-        top: 0;
-        left: 0;
-        background: rgba(0,0,0,0.95);
-        z-index: 9999;
-        width: 100%;
-        position: fixed;
+.bearBoxer:hover {
+    background:rgba(0,0,0,0.7);
+        border-radius:10px;
         color:white;
 }
 
-.loader .content {
-    margin-top:15%;
-
+.theGirlsBox img {
+    max-height: 220px;
+    cursor: hand;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.theGirlsBox img:hover {
+    transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -o-transform: scale(1.6);
 }
 
-.loader .content img {
--moz-animation: spinnerRotate 1s infinite;
-            -webkit-animation: spinnerRotate 1s infinite;
-            animation: spinnerRotate 1s infinite;
+.girlDetailBox img {
+    max-width: 250px;
+}
+.spacer-small {
+    width: 100%;
+    height: 60px;
+}
+.spacer-x-small {
+    width: 100%;
+    height: 20px;
+}
+.scroll-top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    padding: 0 0 0 11px;
+    display: none;
+    z-index: 9999;
+}
+.scroll-top i {
+    color: white;
+    font-size: 44pt;
 }
 
- @-webkit-keyframes spinnerRotate
-        {
-            from{-webkit-transform:rotate(0deg);}
-            to{-webkit-transform:rotate(360deg);}
-        }
-        @-moz-keyframes spinnerRotate
-        {
-            from{-moz-transform:rotate(0deg);}
-            to{-moz-transform:rotate(360deg);}
-        }
-        @-ms-keyframes spinnerRotate
-        {
-            from{-ms-transform:rotate(0deg);}
-            to{-ms-transform:rotate(360deg);}
-        }
+.parallax img {
+    bottom: -4em;
+}
+.aboveGirl {
+    position: relative;
+    top: -597px;
+    max-width: 600px;
+    margin: auto;
+    color: white;
+}
+.aboveGirl .text {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 6em;
+}
 
 /* headroom css */
 
@@ -177,77 +148,68 @@ p {
     transform: translateY(-100%)
 }
 
+nav .brand-logo {
+    padding-left:.5em;
+}
+
 .brand-logo img {
-    width: 215px;
+    width: 130px;
     padding: 1px;
 }
-
 .community {
     margin: 1em;
-    background: rgba(236, 240, 241,1.0);
-    min-width:250px;
+    background: rgba(236, 240, 241, 1.0);
+    min-width: 250px;
 }
-
 .community img {
     width: 100%;
 }
-
 .community .title {
     font-size: 20pt;
 }
-
 .topnav li a {
     text-transform: uppercase;
 }
-
-nav ul a.active {
-    background: rgba(0,0,0,0.2);
-}
-
 .titleIt {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    width:100%;
+    width: 100%;
     bottom: 0;
     color: white;
     height: 100px;
     transition: .6s all;
-}
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
+}
 .titleIt:hover {
-    background: rgba(0,0,0,0.5);
-    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    font-size: 20pt;
 }
-
 .titleIt p {
     padding-top: 0.5em;
     transition: .6s all;
 }
-
 .titleIt p:hover {
-    font-size:20pt;
+
 }
 
 .communityBanner {
     background: no-repeat bottom center fixed;
     background-size: 100%;
-    margin-top:-2em;
+    margin-top: -2em;
 }
-
 .theGirlsBox {
-    background: rgba(0,0,0,0.05);
-    border-radius: 10px;
-    transition: .6s all;
-}
 
+}
 .theGirlsBox:hover {
-    background: rgba(0,0,0,0.2);
+
+
 }
 
 .modal {
     width: 85%;
 }
-
 @media(max-width: 1300px) {
     .mainBanner {
         background: no-repeat bottom center fixed #000;
@@ -256,8 +218,6 @@ nav ul a.active {
         background-size: 72%;
     }
 }
-
-
 @media(max-width: 992px) {
     .mainBanner {
         background: no-repeat bottom center fixed #000;
@@ -265,12 +225,10 @@ nav ul a.active {
         height: 400px;
         background-size: 92%;
     }
-
     .aboveGirl {
         top: -497px;
     }
 }
-
 @media(max-width: 720px) {
     .mainBanner {
         background: no-repeat bottom center fixed #000;
@@ -280,20 +238,69 @@ nav ul a.active {
     }
 }
 
-.thing-enter {
-    opacity: 0.01;
-    transition: opacity 1s ease-in;
+.owl-carousel .owl-item {
+    margin: 0 0.5em 0 0.5em;
+}
+.card .card-image .card-title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
-.thing-enter.thing-enter-active {
-    opacity: 1;
+.parallax-container h2{
+
+    background: rgba(0,0,0,0.6);
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: -0.5em;
+    left: 0;
+    padding: 0.5em 0em 0.5em 1em;
 }
 
-.thing-leave {
-    opacity: 1;
-    transition: opacity 1s ease-in;
+.gamesImg {
+        max-width: 100%;
 }
 
-.thing-leave.thing-leave-active {
-    opacity: 0.01;
+.containerLarge {
+    max-width:1200px;
+    margin:auto;
+}
+
+.summaryBg {
+    background: url('../../public/images/back1.png') -148px 27px no-repeat fixed;
+}
+
+.photoBg {
+        background: url('../../public/images/koala.png') 800px top  no-repeat scroll;
+        position: relative;
+        z-index: 12;
+        margin-bottom: -2em;
+        box-shadow: 0px 20px 50px 10px #FFF;
+}
+
+.communityBg {
+    background: url('../../public/images/back2.jpg') bottom center  no-repeat fixed;
+    margin-top:-2.2em;
+}
+
+.gamesBg {
+    background: url('../../public/images/back3.jpg') top center no-repeat scroll;
+}
+
+.bearBg {
+    background: url('../../public/images/back4.png') 50px center no-repeat fixed;
+    margin-bottom:-1.3em;
+}
+
+.videoMain2 img {
+    width:100%;
+}
+
+.bearDetailBox {
+        max-height: 548px;
 }

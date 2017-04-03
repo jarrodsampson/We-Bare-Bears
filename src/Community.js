@@ -7,29 +7,31 @@ class Community extends Component {
     render () {
         let art = null;
         if (this.props.image === 'self') {
-            art = "images/power.png";
+            art = "images/filler.png";
         } else {
             art = this.props.image;
         }
 
         return (
-            <div className="z-depth-3 community col s12">
-
-                <div className="col l3 m3 s12">
-                    <p>
-                        <img src={art} alt={this.props.title} />
-                    </p>
-                </div>
-                <div className="col l9 m9 s12 left-align">
-                    <p className="title truncate">{this.props.title}</p>
-                    <p>
-                        <strong>{this.props.author}</strong>
-                        <Moment unix fromNow>{this.props.time}</Moment>
-                        <a href={"https://reddit.com/" + this.props.permalink} target="_blank">View Full</a>
-                    </p>
-
-                </div>
+            <div className="col l3 m6 s6">
+            <div className="card z-depth-3">
+                        <a href={"https://reddit.com/" + this.props.permalink} target="_blank">
+                        <div className="card-image">
+                          <img src={art} alt={this.props.title} />
+                          <span className="card-title truncate">{this.props.title}</span>
+                        </div>
+                        </a>
+                        <div className="card-content">
+                          <strong>{this.props.author}</strong> <br />
+                                                  <Moment unix fromNow>{this.props.time}</Moment>
+                        </div>
+                        <div className="card-action">
+                          <a href={"https://reddit.com/" + this.props.permalink} target="_blank">View Full</a>
+                        </div>
             </div>
+            </div>
+
+
         );
     }
 

@@ -61,6 +61,7 @@ class App extends Component {
   showBearDetail (i) {
     console.log("Back", i);
     this.setState({ childVisible: true, details: i});
+    console.log(i.big);
 
     //Materialize.toast('Learn About ' + i.name + "!", 4000);
     $('html,body').animate({scrollTop: $("#bearDetailSnap").offset().top}, 1000);
@@ -72,19 +73,21 @@ class App extends Component {
 
         <div className="videoMain">
 
-          <video id="self1" className="html5-video player" width="100%" loop autoPlay muted>
-            <source src="" width="100%" type="video/mp4">
+          <video id="self1" className="html5-video player" width="100%" loop="true" autoPlay="true" muted>
+            <source src="media/main.mp4" width="100%" type="video/mp4">
             </source>
           </video>
 
         </div>
 
         <div className="bearBg">
-          <div className="container">
+          <div className="containerLarge">
 
             <div className="row wow bounceInRight scrollspy" id="bears">
               <div className="col s12 center-align">
+                <div className="col s12 spacer-small"></div>
                 <h1>Meet The Bears</h1>
+                <div className="col s12 spacer-x-small"></div>
 
                 <div className="col l12 m12 s12 theGirlsBox">
                   <BearList data={this.state.bears} onShowBearDetail={this.showBearDetail} />
@@ -99,59 +102,61 @@ class App extends Component {
 
         { this.state.childVisible ?
 
-             <div className="col s12 center-align girlDetailBox fade">
-                <div className="videoMain2">
-
-                  <video id="self2" src={"media/" + this.state.details.video} className="html5-video player" width="100%" loop autoPlay muted>
-                  </video>
-
-                  <div className="aboveGirl">
-                    <div className="center-align text">
-                      <h2>{this.state.details.name}</h2>
-                      <p><em>{this.state.details.role}</em></p>
-                      <p>{this.state.details.description}</p>
+             <div className="col s12 center-align bearDetailBox fade">
+                    <div className="videoMain2">
+                      <img id="self2" src={"images/" + this.state.details.big} className="" alt="Bear Detail" />
                     </div>
-                  </div>
 
-                </div>
+                      <div className="aboveGirl">
+                        <div className="center-align text">
+                          <h2>{this.state.details.name}</h2>
+                          <p><em>{this.state.details.role}</em></p>
+                          <p>{this.state.details.description}</p>
+                        </div>
+                      </div>
+
+
+                <div className="col s12 spacer-small"></div>
               </div>
 
             : null }
 
-        <div className="col s12 spacer-small"></div>
+
 
 
         <div className="parallax-container">
-          <div className="parallax"><img src="https://placeimg.com/1920/1080/any" alt="Banner" /></div>
+          <div className="parallax"><img src="images/art1.jpg" alt="Banner" /></div>
+          <h2>On The Lookout</h2>
         </div>
 
         <div className="photoBg">
-          <div className="container">
+
 
             <div className="row scrollspy" id="photos">
-              <div className="col s12 center-align">
+              <div className="col s12 center-align no-padding">
+              <div className="col s12 spacer-small"></div>
                 <h1>Photo Booth</h1>
-
-                <div className="col l12 m12 s12 theGirlsBox">
+                <div className="col s12 spacer-x-small"></div>
+                <div className="col l12 m12 s12 no-padding">
                   <PhotoList data={this.state.photos} />
                 </div>
 
-                <div className="col s12 spacer-small"></div>
               </div>
             </div>
-          </div>
         </div>
 
 
         <div className="summaryBg">
           <div className="container">
             <div className="wow fadeInLeft col s12 center-align scrollspy" id="About">
+                <div className="col s12 spacer-small"></div>
               <h1>About</h1>
-              <p>The Powerpuff Girls series debut on November 18, 1998, was the highest rated premiere in Cartoon Network's history at the time. During its run, the series consistently scored the highest rating for an original series each week for the network across a wide range of demographics—from young children to adults.</p>
 
-              <p>The show's last original run episode was on March 25, 2005; in all, six seasons were made. Cartoon Network had offered to give McCracken and Savino a seventh season of the series, but they believed the series had run its course.</p>
               <p>
-                <a className="waves-effect waves-light btn modal-trigger orange darken-1 " href="#moreHistory">Learn More</a>
+                We Bare Bears follows three adoptive bear brothers: Grizzly, Panda and Ice Bear. The bears attempt to integrate with human society, such as by purchasing food, making human companions or trying to become famous on the Internet, although these attempts see the bears struggle to do so due to the civilized nature of humans and their own animal instincts. However, in the end, they figure out that they have each other for support. One notable aspect of the show's humor is the bears' ability to form a "bear stack". As its name implies, the bears stack on top of each other, which serves as their unique way of transportation.
+              </p>
+              <p>
+                <a className="waves-effect waves-light btn modal-trigger orange darken-1 " href="https://en.wikipedia.org/wiki/We_Bare_Bears" target="_blank">Learn More</a>
               </p>
             </div>
 
@@ -163,22 +168,20 @@ class App extends Component {
 
 
         <div className="parallax-container">
-          <div className="parallax"><img src="https://placeimg.com/1920/1080/any" alt="Banner" /></div>
+          <div className="parallax"><img src="images/art2.jpg" alt="Banner" /></div>
+          <h2>Season 2 This April!</h2>
         </div>
 
-        <div className="communityBanner">
-          <div className="container">
+        <div className="communityBg">
             <div className="row wow fadeInLeft col s12 center-align scrollspy" id="community">
               <div className="col s12 spacer-small"></div>
               <h1>The Community</h1>
 
               <CommunityList data={this.state.community} />
 
+              <div className="col s12 spacer-small"></div>
+
             </div>
-
-            <div className="col s12 spacer-small"></div>
-
-          </div>
         </div>
 
         <div className="gamesBg">
@@ -187,7 +190,7 @@ class App extends Component {
               <div className="col s12 center-align">
                 <h1>Games</h1>
 
-                <div className="col l12 m12 s12 theGirlsBox">
+                <div className="col l12 m12 s12">
                   <GameList data={this.state.games} />
                 </div>
 

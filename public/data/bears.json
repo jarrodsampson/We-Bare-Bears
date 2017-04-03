@@ -1,20 +1,20 @@
 [
   {
-    "name": "Blossom1",
-    "description": "The tactician and self-proclaimed leader of the Powerpuff Girls. Her personality ingredient is \"everything nice\", her signature color is pink, and she has long red hair with a red bow.",
-    "image": "blossom.png",
-    "video": "blossom.mp4"
+    "name": "Grizzly",
+    "description": "The oldest and the de facto leader of the brothers, Grizz is a fun-loving bear who tends to get the others into random hijinks. Grizz is paradoxically highly sociable yet socially inept. Despite this, he is constantly wanting to meet new people and tries to befriend everyone he comes across.",
+    "image": "grizzly.png",
+    "big": "back1.png"
   },
   {
-    "name": "Blossom2",
-    "description": "The tactician and self-proclaimed leader of the Powerpuff Girls. Her personality ingredient is \"everything nice\", her signature color is pink, and she has long red hair with a red bow.",
-    "image": "blossom.png",
-    "video": "blossom.mp4"
+    "name": "Panda",
+    "description": "He is the middle brother and is nicknamed Pan-Pan by Grizz. He is tender-hearted and gets embarrassed or anxious easily. Panda has a lot less self-confidence than his brothers. He is good with technology, and uses that skill on online social media and dating sites, with which he finds little to no success.",
+    "image": "panda.png",
+    "big": "back2.jpg"
   },
   {
-    "name": "Blossom3",
-    "description": "The tactician and self-proclaimed leader of the Powerpuff Girls. Her personality ingredient is \"everything nice\", her signature color is pink, and she has long red hair with a red bow.",
-    "image": "blossom.png",
-    "video": "blossom.mp4"
+    "name": "Ice Bear",
+    "description": "The youngest brother. Ice Bear is often stoic and rarely speaks. When he does, he speaks mostly in the third person and mostly says his name first before anything else. He is also a skilled chef, dancer, piano player, a novice at robotics, charade player, welder, poet and a mixed martial artist.",
+    "image": "ice.png",
+    "big": "back3.jpg"
   }
 ]
