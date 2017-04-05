@@ -105,7 +105,7 @@ p {
     height: 60px;
     padding: 0 0 0 11px;
     display: none;
-    z-index: 9999;
+    z-index: 99;
 }
 .scroll-top i {
     color: white;
@@ -115,18 +115,20 @@ p {
 .parallax img {
     bottom: -4em;
 }
-.aboveGirl {
-    position: relative;
-    top: -597px;
-    max-width: 600px;
-    margin: auto;
-    color: white;
+.detailBg {
+background-size:cover;
+    height:500px;
+    width:100%;
 }
-.aboveGirl .text {
+.detailBg .valign {
+    width: 600px;
+        margin: auto;
+}
+.text {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    padding: 1em;
-    margin-top: 6em;
+    padding:1em;
+    color:white;
 }
 
 /* headroom css */
@@ -303,4 +305,8 @@ nav .brand-logo {
 
 .bearDetailBox {
         max-height: 548px;
+}
+
+.card .card-image img {
+    height: 180px;
 }

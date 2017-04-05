@@ -3,7 +3,7 @@
     "name": "Grizzly",
     "description": "The oldest and the de facto leader of the brothers, Grizz is a fun-loving bear who tends to get the others into random hijinks. Grizz is paradoxically highly sociable yet socially inept. Despite this, he is constantly wanting to meet new people and tries to befriend everyone he comes across.",
     "image": "grizzly.png",
-    "big": "back1.png"
+    "big": "back5.jpg"
   },
   {
     "name": "Panda",
@@ -15,6 +15,6 @@
     "name": "Ice Bear",
     "description": "The youngest brother. Ice Bear is often stoic and rarely speaks. When he does, he speaks mostly in the third person and mostly says his name first before anything else. He is also a skilled chef, dancer, piano player, a novice at robotics, charade player, welder, poet and a mixed martial artist.",
     "image": "ice.png",
-    "big": "back3.jpg"
+    "big": "back2.png"
   }
 ]

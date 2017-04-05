@@ -68,6 +68,11 @@ class App extends Component {
   }
 
   render() {
+
+  var divStyle = {
+              backgroundImage: 'url(images/' + this.state.details.big + ')'
+          }
+
     return (
       <div className="App">
 
@@ -102,12 +107,9 @@ class App extends Component {
 
         { this.state.childVisible ?
 
-             <div className="col s12 center-align bearDetailBox fade">
-                    <div className="videoMain2">
-                      <img id="self2" src={"images/" + this.state.details.big} className="" alt="Bear Detail" />
-                    </div>
+             <div className="col s12 valign-wrapper detailBg" style={divStyle}>
 
-                      <div className="aboveGirl">
+                      <div className="valign">
                         <div className="center-align text">
                           <h2>{this.state.details.name}</h2>
                           <p><em>{this.state.details.role}</em></p>
@@ -116,7 +118,6 @@ class App extends Component {
                       </div>
 
 
-                <div className="col s12 spacer-small"></div>
               </div>
 
             : null }
